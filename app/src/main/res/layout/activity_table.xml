@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.widget.RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorTable"
+    tools:context="cs482.ezeobiejesiandrea.simpleblackjack.Controller">
+
+
+
+    <ImageView
+        android:id="@+id/face_up1"
+        style="@style/CardStyle"
+        />
+
+    <ImageView
+        android:id="@+id/face_up2"
+        android:layout_toEndOf="@id/face_up1"
+        style="@style/CardStyle"
+        />
+
+    <ImageView
+        android:id="@+id/dealer_draw1"
+        style="@style/CardStyle"
+        android:layout_toEndOf="@id/face_up2"
+        />
+
+    <ImageView
+        android:id="@+id/dealer_draw2"
+        style="@style/CardStyle"
+        android:layout_toEndOf="@id/dealer_draw1"
+        />
+
+    <ImageView
+        android:id="@+id/dealer_draw3"
+        style="@style/CardStyle"
+        android:layout_toEndOf="@id/dealer_draw2"
+        />
+
+    <ImageView
+        android:id="@+id/player_card1"
+        style="@style/CardStyle"
+        android:layout_below="@id/face_up1"
+        />
+
+    <ImageView
+        android:id="@+id/player_card2"
+        android:layout_below="@id/face_up2"
+        android:layout_toEndOf="@id/player_card1"
+        style="@style/CardStyle"
+        />
+
+    <ImageView
+        android:id="@+id/player_draw1"
+        android:layout_below="@id/dealer_draw1"
+        android:layout_toEndOf="@id/player_card2"
+        style="@style/CardStyle"
+        />
+
+    <ImageView
+        android:id="@+id/player_draw2"
+        android:layout_below="@id/dealer_draw2"
+        android:layout_toEndOf="@id/player_draw1"
+        style="@style/CardStyle"
+        />
+
+    <ImageView
+        android:id="@+id/player_draw3"
+        android:layout_below="@id/dealer_draw3"
+        android:layout_toEndOf="@id/player_draw2"
+        style="@style/CardStyle"
+        />
+
+
+
+
+    <Button
+        android:id="@+id/hit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="50dp"
+        android:layout_below="@id/player_card1"
+
+        android:layout_marginTop="50dp"
+
+        android:text="HIT"/>
+
+    <Button
+        android:id="@+id/stop"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/player_card1"
+        android:layout_toEndOf="@id/hit"
+        android:layout_marginTop="50dp"
+        android:layout_marginStart="50dp"
+        android:text="STOP"/>
+
+</android.widget.RelativeLayout>
