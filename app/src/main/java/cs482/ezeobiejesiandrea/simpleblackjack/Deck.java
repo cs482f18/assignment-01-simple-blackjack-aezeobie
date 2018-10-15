@@ -3,11 +3,13 @@ package cs482.ezeobiejesiandrea.simpleblackjack;
 import java.util.ArrayList;
 
 /**
+ * -- Alwasy use the Javadoc tags @author and @version with the date in the header. e.g., @version 1.0 10/10/2018 --
  * Created by Andrea on 10/3/2018.
  * This class represents a deck of cards
  */
 
 public class Deck extends ArrayList<Card> {
+    
     private ArrayList<String> suits;
    // private static String EXT = ".png";
 
@@ -57,6 +59,7 @@ public class Deck extends ArrayList<Card> {
             this.add(card );
 
             int i;
+            // use switch-case in these scenarios
             for(i = 2; i < 11; i++){
                 card = new Card(suit, i, i);
                 if(i == 2)
@@ -90,6 +93,7 @@ public class Deck extends ArrayList<Card> {
     /**
      * This method prints the deck of cards
      */
+    // why do you want these methods to be protected?
     protected void printDeck()
     {
         for(Card card: this)
