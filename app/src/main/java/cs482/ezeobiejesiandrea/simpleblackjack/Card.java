@@ -1,6 +1,8 @@
 package cs482.ezeobiejesiandrea.simpleblackjack;
 
 /**
+ * Use Javadoc style comments using @author and @version
+ *
  * Created by Andrea on 10/3/2018.
  * This class represents a playing card
  */
